@@ -1,0 +1,21 @@
+.l-intro {
+    position: relative;
+
+    padding: 70px 0 40px;
+
+    &:after {
+        position: absolute;
+        z-index: 1;
+        bottom: -23px;
+        left: 0;
+
+        width: 100vw;
+        height: 23px;
+
+        content: '';
+
+        background-image: url(#{$path-image}intro-bottom.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

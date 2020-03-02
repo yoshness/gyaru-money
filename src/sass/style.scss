@@ -1,11 +1,14 @@
-// @import 'settings';
-// @import 'base/base';
-// @import 'base/sanitize';
+@import 'settings';
+@import 'base/base';
+@import 'base/sanitize';
 
-// @import 'lib/media-queries';
-// @import 'lib/utility';
-// @import 'lib/slick';
+@import 'lib/media-queries';
+@import 'lib/utility';
 
-// @import 'modules/header';
+@import 'modules/hero';
+@import 'modules/intro';
+@import 'modules/services';
 
-// @import 'layout/l-container';
+@import 'layout/l-container';
+@import 'layout/l-intro';
+@import 'layout/l-services';

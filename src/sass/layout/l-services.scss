@@ -1,0 +1,20 @@
+.l-services {
+    position: relative;
+
+    padding: 100px 0;
+
+    background-color: #fff1f3;
+}
+
+.l-services__decors {
+    position: absolute;
+    top: 170px;
+    left: 0;
+
+    width: 100vw;
+    height: 94%;
+
+    background-image: url(#{$path-image}services-decor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
