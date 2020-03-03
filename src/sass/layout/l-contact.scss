@@ -1,0 +1,39 @@
+.l-contact {
+    position: relative;
+
+    padding: 60px 0 30px;
+
+    background-color: $color-primary;
+
+    &:before {
+        position: absolute;
+        top: -24px;
+        left: 0;
+
+        width: 100vw;
+        height: 24px;
+
+        content: '';
+
+        background-image: url(#{$path-image}contact-top.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &:after {
+        position: absolute;
+        top: -60px;
+        left: 15px;
+
+        display: block;
+
+        width: 100px;
+        height: 100px;
+
+        content: '';
+
+        background-image: url(#{$path-image}badge.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
