@@ -1,0 +1,20 @@
+.l-footer {
+    position: relative;
+
+    padding: 80px 0 10px;
+
+    background-color: #fff1f3;
+}
+
+.l-footer__decors {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 97%;
+
+    background-image: url(#{$path-image}footer-decor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

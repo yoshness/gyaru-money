@@ -1,0 +1,20 @@
+.l-faq {
+    position: relative;
+
+    padding: 70px 0;
+
+    background-color: #fff1f3;
+}
+
+.l-faq__decors {
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+    width: 100vw;
+    height: 97%;
+
+    background-image: url(#{$path-image}faq-decor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
