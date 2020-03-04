@@ -1,14 +1,22 @@
 .hero {
     position: relative;
 
-    height: 96vh;
+    height: 100vh;
     margin: 0 auto;
 
-    text-align: center;
-
-    background-image: url(#{$path-image}hero-bg.png);
+    background-image: url(#{$path-image}hero-bg-pc.png);
     background-repeat: no-repeat;
+    background-position: center 100%;
     background-size: cover;
+
+    @include max-screen($breakpoint-mobile) {
+        height: 96vh;
+
+        text-align: center;
+
+        background-image: url(#{$path-image}hero-bg.png);
+        background-position: auto;
+    }
 }
 
 .hero__decors {
@@ -16,79 +24,137 @@
     top: 50px;
     left: 0;
 
+    display: none;
+
     width: 100vw;
     height: 507px;
 
     background-image: url(#{$path-image}hero-decor.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include max-screen($breakpoint-mobile) {
+        display: block;
+    }
 }
 
 .hero__logo {
     position: relative;
 
-    width: 110px;
-    height: 34px;
-    margin: 10px auto 5px;
+    width: 140px;
+    height: 42px;
+    margin: 15px 0 0 15px;
+
+    @include max-screen($breakpoint-mobile) {
+        width: 110px;
+        height: 34px;
+        margin: 10px auto 5px;
+    }
 }
 
 .hero__heading {
     position: relative;
+    top: -20px;
+    left: 150px;
+
+    @include max-screen($breakpoint-mobile) {
+        top: auto;
+        left: auto;
+    }
 
     img {
-        width: 95vw;
-        height: 185px;
+        width: 520px;
+
+        @include max-screen($breakpoint-mobile) {
+            top: 0;
+            left: 0;
+
+            width: 95vw;
+            height: 185px;
+        }
     }
 }
 
 .hero__curved {
     position: relative;
-    top: 25px;
-    left: 5px;
+    top: 0;
+    left: 125px;
+
+    @include max-screen($breakpoint-mobile) {
+        top: 25px;
+        left: 5px;
+    }
 
     p {
         font-family: $font-ten-mincho;
-        font-size: 17px;
+        font-size: 32px;
         font-weight: bold;
 
         position: absolute;
 
         color: #fff;
 
+        @include max-screen($breakpoint-mobile) {
+            font-size: 17px;
+        }
+
         &:first-of-type {
-            top: 0;
-            left: 10px;
+            left: 100px;
 
             transform: rotate(-12deg) scale(.8);
+
+            @include max-screen($breakpoint-mobile) {
+                top: 0;
+                left: 10px;
+            }
         }
         &:nth-of-type(2) {
-            font-size: 14px;
+            font-size: 25px;
 
-            top: 45px;
-            left: 95px;
+            top: 100px;
+            left: 205px;
+
+            @include max-screen($breakpoint-mobile) {
+                font-size: 14px;
+
+                top: 45px;
+                left: 95px;
+            }
         }
         &:last-of-type {
-            top: 85px;
-            left: 0;
+            top: 195px;
+            left: 70px;
 
             transform: rotate(12deg) scale(.8);
+
+            @include max-screen($breakpoint-mobile) {
+                top: 85px;
+                left: 0;
+            }
         }
     }
 }
 
 .hero__support {
     font-family: $font-antro-vectra;
-    font-size: 30px;
+    font-size: 55px;
     font-weight: bold;
 
     position: absolute;
-    bottom: 83px;
-    left: 0;
+    bottom: 210px;
+    left: 44%;
 
     transform: rotate(-8deg);
     letter-spacing: .05em;
 
     color: #fff;
+
+    @include max-screen($breakpoint-mobile) {
+        font-size: 30px;
+
+        bottom: 83px;
+        left: 0;
+    }
 
     span {
         position: relative;

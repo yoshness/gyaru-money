@@ -6,16 +6,24 @@
     &:after {
         position: absolute;
         z-index: 1;
-        bottom: -23px;
+        bottom: -65px;
         left: 0;
 
         width: 100vw;
-        height: 23px;
+        height: 65px;
 
         content: '';
 
-        background-image: url(#{$path-image}intro-bottom.png);
+        background-image: url(#{$path-image}intro-bottom-pc.png);
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include max-screen($breakpoint-mobile) {
+            bottom: -23px;
+
+            height: 23px;
+
+            background-image: url(#{$path-image}intro-bottom.png);
+        }
     }
 }

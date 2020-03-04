@@ -1,6 +1,5 @@
 .services__heading {
-    width: 335px;
-    height: 92px;
+    width: 480px;
     margin: 0 auto;
 
     text-align: center;
@@ -8,22 +7,31 @@
     background-image: url(#{$path-image}services-heading-border.png);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include max-screen($breakpoint-mobile) {
+        width: 335px;
+        height: 92px;
+    }
 }
 
 .services__heading-sub {
     font-family: $font-ten-mincho;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: normal;
 
     position: relative;
     top: -20px;
 
     color: #cca873;
+
+    @include max-screen($breakpoint-mobile) {
+        font-size: 18px;
+    }
 }
 
 .services__heading-main {
     font-family: $font-ten-mincho;
-    font-size: 29px;
+    font-size: 38px;
     font-weight: normal;
     line-height: 1.3;
 
@@ -32,8 +40,16 @@
 
     color: $color-primary;
 
+    @include max-screen($breakpoint-mobile) {
+        font-size: 29px;
+    }
+
     span {
-        font-size: 40px;
+        font-size: 53px;
+
+        @include max-screen($breakpoint-mobile) {
+            font-size: 40px;
+        }
     }
 }
 
@@ -48,18 +64,26 @@
 .services__item {
     position: relative;
 
+    display: flex;
+
     margin-bottom: 60px;
 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
     img {
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: relative;
+
+        width: 30%;
     }
 
     &:first-child {
         img {
-            width: 265px;
-            height: 275px;
+            @include max-screen($breakpoint-mobile) {
+                width: 265px;
+                height: 275px;
+            }
         }
 
         .services__item-title {
@@ -73,30 +97,51 @@
             right: 0;
             left: auto;
 
-            width: 266px;
-            height: 278px;
+            margin-left: auto;
+
+            order: 2;
+            @include max-screen($breakpoint-mobile) {
+                width: 266px;
+                height: 278px;
+
+                order: auto;
+            }
         }
 
         .services__item-details {
-            top: 285px;
+            top: 20px;
+
+            width: 25%;
+            margin-left: auto;
+
+            order: 1;
+            @include max-screen($breakpoint-mobile) {
+                width: auto;
+                margin-left: initial;
+
+                order: 2;
+            }
         }
 
         .services__item-title {
+            width: 100%;
             margin-left: 105px;
 
             background-position: -7px 13px;
             background-size: 40% 26%;
-        }
 
-        .services__item-description {
-            margin-top: 295px;
+            @include max-screen($breakpoint-mobile) {
+                width: auto;
+            }
         }
     }
 
     &:last-child {
         img {
-            width: 256px;
-            height: 268px;
+            @include max-screen($breakpoint-mobile) {
+                width: 256px;
+                height: 268px;
+            }
         }
 
         .services__item-title {
@@ -110,7 +155,14 @@
 
 .services__item-details {
     position: relative;
-    top: 280px;
+
+    width: 60%;
+
+    @include max-screen($breakpoint-mobile) {
+        top: 10px;
+
+        width: 100%;
+    }
 
     &:before {
         font-family: $font-antro-vectra;
@@ -143,30 +195,45 @@
 
 .services__item-title {
     font-family: $font-ten-mincho;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: normal;
     line-height: 1.3;
 
     margin-left: 90px;
 
     color: $color-primary;
-    background-image: url(#{$path-image}service-dash.png);
     background-repeat: no-repeat;
+
+    @include max-screen($breakpoint-mobile) {
+        font-size: 20px;
+
+        background-image: url(#{$path-image}service-dash.png);
+    }
 }
 
 .services__item-description {
     font-size: 14px;
+    font-size: 18px;
 
-    width: 335px;
-    height: 135px;
-    margin: 10px auto 0;
-    margin-top: 290px;
-    padding: 20px 25px;
+    width: 450px;
+    height: 180px;
+    padding: 35px;
 
     color: #cca873;
     background-image: url(#{$path-image}service-description-bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+
+    @include max-screen($breakpoint-mobile) {
+        font-size: 14px;
+
+        width: 335px;
+        height: 135px;
+        margin: 30px auto 0;
+        padding: 20px 25px;
+
+        background-size: cover;
+    }
 }
 
 .services__bottom {
@@ -179,14 +246,22 @@
 
 .services__bottom-sub {
     font-family: $font-ten-mincho;
-    font-size: 20px;
+    font-size: 25px;
 
     color: #cca873;
+
+    @include max-screen($breakpoint-mobile) {
+        font-size: 20px;
+    }
 }
 
 .services__bottom-main {
     font-family: $font-ten-mincho;
-    font-size: 35px;
+    font-size: 38px;
 
     color: $color-primary;
+
+    @include max-screen($breakpoint-mobile) {
+        font-size: 35px;
+    }
 }

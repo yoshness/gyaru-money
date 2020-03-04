@@ -1,9 +1,13 @@
 .l-faq {
     position: relative;
 
-    padding: 70px 0;
+    padding: 70px 0 150px;
 
     background-color: #fff1f3;
+
+    @include max-screen($breakpoint-mobile) {
+        padding-bottom: 70px;
+    }
 }
 
 .l-faq__decors {

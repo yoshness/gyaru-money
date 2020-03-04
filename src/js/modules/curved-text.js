@@ -7,8 +7,13 @@ export default function curvedText() {
     $text.each((index, value) => {
         const circleType = new CircleType(value);
         let rad = $(value).data('radius');
+        
+        if($(window).width() > 767){
+        	circleType.radius(360);
+        } else {
+        	circleType.radius(rad);
+        }
 
-        circleType.radius(rad);
         circleType.forceWidth(true);
     });
 }

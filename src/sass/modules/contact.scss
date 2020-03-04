@@ -1,42 +1,73 @@
 .contact {
     display: flex;
 
+    text-align: center;
+
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.contact__block {
+    width: 50%;
+
+    @include max-screen($breakpoint-mobile) {
+        width: auto;
+    }
+}
+
 .contact__text {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
+
+    display: block;
+
+    width: 100%;
 
     color: #fff;
 
     font-feature-settings: 'palt';
+    @include max-screen($breakpoint-mobile) {
+        font-size: 20px;
+    }
 
     // MODIFIER
     &.contact__text--sub {
-        font-size: 18px;
+        font-size: 21px;
 
         margin-bottom: 20px;
+
+        @include max-screen($breakpoint-mobile) {
+            font-size: 18px;
+        }
     }
 }
 
 .contact__button {
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
     line-height: 6;
 
     display: block;
 
-    width: 353px;
-    height: 105px;
+    width: 430px;
+    height: auto;
     padding: 0 30px;
 
-    text-align: left;
+    text-align: center;
     letter-spacing: -.03em;
 
     color: $color-primary;
     background-image: url(#{$path-image}line-button-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
+
+    @include max-screen($breakpoint-mobile) {
+        font-size: 18px;
+
+        width: 353px;
+        height: 105px;
+        padding: 0 30px;
+
+        text-align: left;
+    }
 }

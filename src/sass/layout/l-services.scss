@@ -1,9 +1,13 @@
 .l-services {
     position: relative;
 
-    padding: 100px 0;
+    padding: 160px 0 100px;
 
     background-color: #fff1f3;
+
+    @include max-screen($breakpoint-mobile) {
+        padding: 100px 0;
+    }
 }
 
 .l-services__decors {
