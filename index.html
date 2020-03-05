@@ -23,25 +23,26 @@
 <body id="js-top">
 	<main>
 
-		<div class="hero">
-	<div class="hero__decors"></div>
-	<img class="hero__logo" src="public/images/logo.png" alt="">
-	<h1 class="hero__heading">
+		<div class="hero" id="js-hero">
+	<div class="hero__decors" id="js-hero-decors"></div>
+	<img class="hero__logo" src="public/images/logo.png" alt="" id="js-hero-logo">
+	<h1 class="hero__heading" id="js-hero-title">
 		<img src="public/images/hero-heading.png" alt="">
 	</h1>
-	<div class="hero__curved">
+	<div class="hero__curved" id="js-hero-curved">
 		<p class="js-curved-text" data-radius="250">#仕事探しサポート</p>
 		<p class="js-curved-text" data-radius="180">#引越し代行</p>
 		<p class="js-curved-text" data-radius="280">#最大1万円祝い金贈呈</p>
 	</div>
-	<p class="hero__support">Support<br><span>Campaign</span></p>
+	<p class="hero__support"  id="js-hero-support">Support<br><span>Campaign</span></p>
+	<img class="hero__woman" src="public/images/hero-img.png" alt="">
 </div>
 
 		<section class="l-intro">
 			<div class="l-container">
 				<div class="intro">
-	<h2 class="intro__heading">こんな悩み…ありませんか？</h2>
-	<ul class="intro__list">
+	<h2 class="intro__heading js-show">こんな悩み…ありませんか？</h2>
+	<ul class="intro__list js-show">
 		<li class="intro__item">
 			<p>今よりもっと<br>稼ぎたい!!</p>
 		</li>
@@ -55,8 +56,8 @@
 			<p>上京したい!!</p>
 		</li>
 	</ul>
-	<img class="intro__image" src="public/images/intro.png" alt="">
-	<p class="intro__bottom">そんなあなたの希望が<br>「すぐに」叶っちゃう!!</p>
+	<img class="intro__image js-show" src="public/images/intro.png" alt="">
+	<p class="intro__bottom js-show">そんなあなたの希望が<br>「すぐに」叶っちゃう!!</p>
 </div>
 			</div>
 		</section>
@@ -64,26 +65,26 @@
 			<div class="l-services__decors"></div>
 			<div class="l-container">
 				<div class="services">
-	<h2 class="services__heading">
+	<h2 class="services__heading js-show" data-offset="350">
 		<span class="services__heading-sub">東京新生活応援キャンペーンの</span>
 		<p class="services__heading-main">嬉しい<span>3</span>つのサービス</p>
 	</h2>
 	<ul class="services__list">
-		<li class="services__item">
+		<li class="services__item js-show js-show" data-offset="350">
 			<img src="public/images/service-1.png" alt="">
 			<div class="services__item-details">
 				<h3 class="services__item-title">都内の⼈気キャバクラ店で<br>思う存分働ける!!</h3>
 				<p class="services__item-description">お仕事コンシェルジュと⾯談した上で有名 店、優良店をご紹介します。⼀流スカウト マンが全⾯的にサポート&ケアをするので、 何も⼼配する必要なし!!</p>
 			</div>
 		</li>
-		<li class="services__item">
+		<li class="services__item js-show js-show" data-offset="350">
 			<img src="public/images/service-2.png" alt="">
 			<div class="services__item-details">
 				<h3 class="services__item-title">お家探しを<br>代⾏してもらえる!!</h3>
 				<p class="services__item-description">ガルマネ経由だからできるオリジナルサー ビス!!ご希望の場合は、物件の内覧なども ガルマネが提携する不動産会社のスタッフが⾏います。</p>
 			</div>
 		</li>
-		<li class="services__item">
+		<li class="services__item js-show js-show" data-offset="350">
 			<img src="public/images/service-3.png" alt="">
 			<div class="services__item-details">
 				<h3 class="services__item-title">上京祝い金を活用して<br>新生活の不安も解消!!</h3>
@@ -91,7 +92,7 @@
 			</div>
 		</li>
 	</ul>
-	<div class="services__bottom">
+	<div class="services__bottom js-show">
 		<span class="services__bottom-sub">お仕事探しからお家探しまで</span>
 		<p class="services__bottom-main">ガルマネにお任せ!!</p>
 	</div>
@@ -101,15 +102,15 @@
 		<aside class="l-contact">
 			<div class="l-container">
 				<div class="contact">
-	<div class="contact__block">
+	<div class="contact__block js-show">
 		<p class="contact__text">お申し込みはLINEだから超簡単♡</p>
 		<p class="contact__text contact__text--sub">応募はお早めに!!</p>
 	</div>
-	<div class="contact__block">
+	<div class="contact__block js-show">
 		<p class="contact__text">「東京新⽣活応援キャンペーンをみた」</p>
 		<p class="contact__text contact__text--sub">とお伝えください。</p>
 	</div>
-	<a class="contact__button" href="#">ガルマネのLINE友達追加はこちら</a>
+	<a class="contact__button js-show" href="#">ガルマネのLINE友達追加はこちら</a>
 </div>
 			</div>
 		</aside>
@@ -117,19 +118,19 @@
 			<div class="l-faq__decors"></div>
 			<div class="l-container">
 				<div class="faq">
-	<h2 class="faq__heading">
+	<h2 class="faq__heading js-show">
 		<span class="faq__heading-sub">まだ少しご不安な方へ</span>
 		<p class="faq__heading-main">お役立ち<span>FAQ</span></p>
 	</h2>
 	<ul class="faq__list">
-		<li class="faq__item">
+		<li class="faq__item js-show" data-offset="300">
 			<img src="public/images/faq-1.png" alt="" class="u-show-sp">
 			<img src="public/images/faq-1-pc.png" alt="" class="u-show-pc">
 			<div class="faq__item-details">
 				<p class="faq__item-description">私、東京からかなり離れた県に住んでいるんだけど⼤丈夫かなぁ…</p>
 			</div>
 		</li>
-		<li class="faq__item faq__item--answer">
+		<li class="faq__item faq__item--answer js-show" data-offset="300">
 			<img src="public/images/faq-2.png" alt="" class="u-show-sp">
 			<img src="public/images/faq-2-pc.png" alt="" class="u-show-pc">
 			<div class="faq__item-details">
@@ -137,14 +138,14 @@
 				<p class="faq__item-description">国内在住の⽅なら どこでも⼤丈夫です!!実は歌舞伎町のキャバ嬢さん… ほとんど地⽅出⾝なんです</p>
 			</div>
 		</li>
-		<li class="faq__item">
+		<li class="faq__item js-show" data-offset="300">
 			<img src="public/images/faq-3.png" alt="" class="u-show-sp">
 			<img src="public/images/faq-3-pc.png" alt="" class="u-show-pc">
 			<div class="faq__item-details">
 				<p class="faq__item-description">引越しなど距離が遠いときは別途お金はかかるの?</p>
 			</div>
 		</li>
-		<li class="faq__item faq__item--answer">
+		<li class="faq__item faq__item--answer js-show" data-offset="300">
 			<img src="public/images/faq-4.png" alt="" class="u-show-sp">
 			<img src="public/images/faq-4-pc.png" alt="" class="u-show-pc">
 			<div class="faq__item-details">
@@ -159,15 +160,15 @@
 		<aside class="l-contact">
 			<div class="l-container">
 				<div class="contact">
-	<div class="contact__block">
+	<div class="contact__block js-show">
 		<p class="contact__text">お申し込みはLINEだから超簡単♡</p>
 		<p class="contact__text contact__text--sub">応募はお早めに!!</p>
 	</div>
-	<div class="contact__block">
+	<div class="contact__block js-show">
 		<p class="contact__text">「東京新⽣活応援キャンペーンをみた」</p>
 		<p class="contact__text contact__text--sub">とお伝えください。</p>
 	</div>
-	<a class="contact__button" href="#">ガルマネのLINE友達追加はこちら</a>
+	<a class="contact__button js-show" href="#">ガルマネのLINE友達追加はこちら</a>
 </div>
 			</div>
 		</aside>

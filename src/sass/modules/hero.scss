@@ -4,18 +4,17 @@
     height: 100vh;
     margin: 0 auto;
 
-    background-image: url(#{$path-image}hero-bg-pc.png);
-    background-repeat: no-repeat;
-    background-position: center 100%;
-    background-size: cover;
+    background-color: #f092a2;
 
     @include max-screen($breakpoint-mobile) {
         height: 96vh;
 
         text-align: center;
 
-        background-image: url(#{$path-image}hero-bg.png);
-        background-position: auto;
+        background: url(#{$path-image}hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: unset;
+        background-size: cover;
     }
 }
 
@@ -55,11 +54,11 @@
 .hero__heading {
     position: relative;
     top: -20px;
-    left: 150px;
+
+    text-align: center;
 
     @include max-screen($breakpoint-mobile) {
         top: auto;
-        left: auto;
     }
 
     img {
@@ -92,10 +91,32 @@
 
         position: absolute;
 
+        transition: opacity 1s $easing;
+        transition-delay: .5s;
+
+        opacity: 0;
         color: #fff;
 
         @include max-screen($breakpoint-mobile) {
             font-size: 17px;
+
+            transition: opacity $duration $easing;
+            transition-delay: 0;
+
+            &:before {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 0;
+
+                width: 100%;
+                height: 100%;
+
+                content: '';
+                transition: width 2.5s cubic-bezier(.19, 1, .22, 1);
+
+                background: linear-gradient(to right,#ee949e 0%, #f08f9e 100%);
+            }
         }
 
         &:first-of-type {
@@ -141,8 +162,9 @@
     font-weight: bold;
 
     position: absolute;
-    bottom: 210px;
-    left: 44%;
+    z-index: 1;
+    bottom: 150px;
+    left: 45%;
 
     transform: rotate(-8deg);
     letter-spacing: .05em;
@@ -160,5 +182,63 @@
         position: relative;
         top: -17px;
         left: 70px;
+    }
+}
+
+.hero__woman {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+
+    width: 650px;
+
+    @include max-screen($breakpoint-mobile) {
+        display: none;
+    }
+}
+
+// ANIMATIONS
+.hero,
+.hero__decors,
+.hero__logo,
+.hero__heading {
+    transition: opacity .5s $easing;
+
+    opacity: 0;
+
+    &.is-shown {
+        opacity: 1;
+    }
+}
+
+.hero__curved {
+    &.is-shown {
+        p {
+            opacity: 1;
+
+            &:before {
+                @include max-screen($breakpoint-mobile) {
+                    width: 0;
+                }
+            }
+        }
+    }
+}
+
+.hero__support {
+    left: -500px;
+
+    transition: left 1s $easing .5s;
+
+    @include max-screen($breakpoint-mobile) {
+        transition: left .8s $easing;
+    }
+
+    &.is-shown {
+        left: 45%;
+
+        @include max-screen($breakpoint-mobile) {
+            left: 0;
+        }
     }
 }

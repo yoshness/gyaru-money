@@ -71,3 +71,19 @@
         text-align: left;
     }
 }
+
+// ANIMATIONS
+.contact__block,
+.contact__button {
+    transition: opacity .7s $easing,
+    transform .7s $easing;
+    transform: translateY(30px);
+
+    opacity: 0;
+
+    &.is-shown {
+        transform: translateY(0);
+
+        opacity: 1;
+    }
+}
