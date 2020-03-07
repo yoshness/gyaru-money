@@ -5,8 +5,15 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" >
+	<meta property="og:title" content="title">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="url" />
+	<meta name="description" content="description"/>
+    <meta property="og:description" content="description"/>
+	<meta property="og:image" content="http://cebushun.sakura.ne.jp/public/images/ogp.jpg">
 
 	<link rel="stylesheet" href="public/css/style.css">
+	<link rel="shortcut icon" type="image/png" href="public/images/favicon.png"/>
 	
 	<!-- Ten Mincho font -->
 	<script>
@@ -21,6 +28,7 @@
 	</script>
 </head>
 <body id="js-top">
+	<%- include('partials/header'); %>
 	<main>
 
 		<%- include('partials/hero'); %>
@@ -30,7 +38,7 @@
 				<%- include('partials/intro'); %>
 			</div>
 		</section>
-		<section class="l-services">
+		<section class="l-services" id="js-services-section">
 			<div class="l-services__decors"></div>
 			<div class="l-container">
 				<%- include('partials/services'); %>
@@ -41,7 +49,7 @@
 				<%- include('partials/contact'); %>
 			</div>
 		</aside>
-		<section class="l-faq">
+		<section class="l-faq" id="js-faq-section">
 			<div class="l-faq__decors"></div>
 			<div class="l-container">
 				<%- include('partials/faq'); %>
@@ -54,7 +62,7 @@
 		</aside>
 	</main>
 
-	<section class="l-footer">
+	<section class="l-footer" id="js-footer">
 		<div class="l-footer__decors"></div>
 		<div class="l-container">
 			<%- include('partials/footer'); %>

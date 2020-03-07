@@ -1,0 +1,25 @@
+.dotted {
+    position: relative;
+
+    display: inline-block;
+
+    &:before {
+        position: absolute;
+        top: -25px;
+        left: 50%;
+
+        content: '・';
+        transform: translateX(-50%);
+
+        color: $color-primary;
+    }
+
+    // MODIFIER
+    &.dotted--white {
+        &:before {
+            top: -20px;
+
+            color: #fff;
+        }
+    }
+}

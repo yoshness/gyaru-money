@@ -86,7 +86,7 @@
         top: 165px;
         left: 200px;
 
-        transition: opacity 1.5s cubic-bezier(.23, 1, .32, 1) 2s;
+        transition: opacity 1.5s cubic-bezier(.23, 1, .32, 1) 1.75s;
 
         @include max-screen($breakpoint-mobile) {
             left: 0;
@@ -96,7 +96,7 @@
         top: 545px;
         left: 200px;
 
-        transition: opacity 1.5s cubic-bezier(.23, 1, .32, 1) 3s;
+        transition: opacity 1.5s cubic-bezier(.23, 1, .32, 1) 2.5s;
 
         @include max-screen($breakpoint-mobile) {
             left: 0;
@@ -106,7 +106,7 @@
         top: 760px;
         right: 250px;
 
-        transition: opacity 1.5s cubic-bezier(.23, 1, .32, 1) 4s;
+        transition: opacity 1.5s cubic-bezier(.23, 1, .32, 1) 3.25s;
 
         @include max-screen($breakpoint-mobile) {
             top: 650px;
@@ -153,6 +153,7 @@
 
     @include max-screen($breakpoint-mobile) {
         font-size: 30px;
+        line-height: 2.2;
 
         width: auto;
         margin-top: 240px;

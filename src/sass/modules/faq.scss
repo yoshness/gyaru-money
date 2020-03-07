@@ -107,22 +107,18 @@
             order: 2;
         }
         .faq__item-details {
-            width: 59%;
+            width: 57%;
 
             order: 1;
+            @include max-screen($breakpoint-mobile) {
+                width: 191px;
+            }
 
             &:before {
-                font-size: 35px;
-                font-weight: bold;
-
-                position: absolute;
                 top: -45px;
                 left: 3px;
 
                 content: 'A.';
-
-                opacity: .3;
-                color: $color-primary;
 
                 @include max-screen($breakpoint-mobile) {
                     top: -35px;
@@ -140,6 +136,14 @@
             margin-left: -15px;
         }
     }
+
+    &:nth-child(3) {
+        .faq__item-details {
+            @include max-screen($breakpoint-mobile) {
+                width: 140px;
+            }
+        }
+    }
 }
 
 .faq__item-details {
@@ -148,8 +152,7 @@
     width: 45%;
 
     &:before {
-        font-family: 'Verdana';
-        font-size: 35px;
+        font-size: 30px;
         font-weight: bold;
 
         position: absolute;
@@ -162,10 +165,10 @@
         color: $color-primary;
 
         @include max-screen($breakpoint-mobile) {
-            font-size: 28px;
-
             top: -20px;
             left: -37px;
+
+            width: 144px;
         }
     }
 }
@@ -190,8 +193,6 @@
     @include max-screen($breakpoint-mobile) {
         font-size: 16px;
         line-height: inherit;
-
-        letter-spacing: -.07em;
     }
 }
 

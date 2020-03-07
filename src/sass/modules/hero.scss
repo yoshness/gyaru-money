@@ -47,22 +47,25 @@
     @include max-screen($breakpoint-mobile) {
         width: 110px;
         height: 34px;
-        margin: 10px auto 5px;
+        margin: 15px auto 5px;
     }
 }
 
 .hero__heading {
     position: relative;
+    z-index: 1;
     top: -20px;
+    left: -250px;
 
     text-align: center;
 
     @include max-screen($breakpoint-mobile) {
         top: auto;
+        left: auto;
     }
 
     img {
-        width: 520px;
+        width: 620px;
 
         @include max-screen($breakpoint-mobile) {
             top: 0;
@@ -76,8 +79,9 @@
 
 .hero__curved {
     position: relative;
-    top: 0;
-    left: 125px;
+    z-index: 1;
+    top: -20px;
+    left: 100px;
 
     @include max-screen($breakpoint-mobile) {
         top: 25px;
@@ -86,7 +90,7 @@
 
     p {
         font-family: $font-ten-mincho;
-        font-size: 32px;
+        font-size: 33px;
         font-weight: bold;
 
         position: absolute;
@@ -122,7 +126,7 @@
         &:first-of-type {
             left: 100px;
 
-            transform: rotate(-12deg) scale(.8);
+            transform: rotate(-12deg) scale(.75);
 
             @include max-screen($breakpoint-mobile) {
                 top: 0;
@@ -130,10 +134,10 @@
             }
         }
         &:nth-of-type(2) {
-            font-size: 25px;
+            font-size: 24px;
 
-            top: 100px;
-            left: 205px;
+            top: 65px;
+            left: 305px;
 
             @include max-screen($breakpoint-mobile) {
                 font-size: 14px;
@@ -143,14 +147,16 @@
             }
         }
         &:last-of-type {
-            top: 195px;
-            left: 70px;
+            top: 120px;
+            left: 150px;
 
-            transform: rotate(12deg) scale(.8);
+            transform: rotate(9deg) scale(.75);
 
             @include max-screen($breakpoint-mobile) {
                 top: 85px;
                 left: 0;
+
+                transform: rotate(12deg) scale(.8);
             }
         }
     }
@@ -158,13 +164,13 @@
 
 .hero__support {
     font-family: $font-antro-vectra;
-    font-size: 55px;
+    font-size: 60px;
     font-weight: bold;
 
     position: absolute;
     z-index: 1;
-    bottom: 150px;
-    left: 45%;
+    bottom: -20px;
+    left: 11%;
 
     transform: rotate(-8deg);
     letter-spacing: .05em;
@@ -180,8 +186,13 @@
 
     span {
         position: relative;
-        top: -17px;
-        left: 70px;
+        top: -30px;
+        left: 140px;
+
+        @include max-screen($breakpoint-mobile) {
+            top: -17px;
+            left: 70px;
+        }
     }
 }
 
@@ -190,7 +201,7 @@
     right: 50px;
     bottom: 0;
 
-    width: 650px;
+    width: 820px;
 
     @include max-screen($breakpoint-mobile) {
         display: none;
@@ -235,7 +246,7 @@
     }
 
     &.is-shown {
-        left: 45%;
+        left: 11%;
 
         @include max-screen($breakpoint-mobile) {
             left: 0;
