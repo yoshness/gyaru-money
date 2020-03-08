@@ -2,12 +2,14 @@
     position: relative;
 
     height: 100vh;
+    min-height: 762px;
     margin: 0 auto;
 
     background-color: #f092a2;
 
     @include max-screen($breakpoint-mobile) {
         height: 92.5vh;
+        min-height: unset;
 
         text-align: center;
 
@@ -33,31 +35,63 @@
 
         &:first-child {
             top: 155px;
-            left: -20px;
+            left: -57px;
 
-            width: 67px;
-            height: 92px;
+            width: 182px;
+            height: 244px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 155px;
+                left: -20px;
+
+                width: 67px;
+                height: 92px;
+            }
         }
         &:nth-child(2) {
-            top: 48px;
-            right: 0;
+            top: -80px;
+            right: -20px;
 
-            width: 83px;
-            height: 161px;
+            width: 178px;
+            height: 345px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 48px;
+                right: 0;
+
+                width: 83px;
+                height: 161px;
+            }
         }
         &:nth-child(3) {
-            top: 400px;
+            top: 560px;
             left: 0;
 
-            width: 66px;
-            height: 152px;
+            width: 85px;
+            height: 196px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 400px;
+                left: 0;
+
+                width: 66px;
+                height: 152px;
+            }
         }
         &:last-child {
-            top: 240px;
+            top: 460px;
             right: 0;
 
-            width: 41px;
-            height: 64px;
+            width: 80px;
+            height: 126px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 240px;
+                right: 0;
+
+                width: 41px;
+                height: 64px;
+            }
         }
     }
 }

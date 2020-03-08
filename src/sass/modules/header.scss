@@ -87,6 +87,12 @@
             }
         }
     }
+
+    &:hover {
+        span {
+            opacity: .8;
+        }
+    }
 }
 
 .header__menu {
@@ -117,7 +123,7 @@
 
     .contact__block {
         width: 100%;
-        margin: 20px 0 -20px;
+        margin: 20px 0 -10px;
 
         .contact__text {
             font-size: 20px;
@@ -131,7 +137,7 @@
         font-size: 18px;
 
         width: 353px;
-        height: 105px;
+        height: 85px;
         margin: 0 auto;
     }
 

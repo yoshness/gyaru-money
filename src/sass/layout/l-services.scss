@@ -12,6 +12,7 @@
 
 .l-services__decors {
     position: relative;
+    z-index: 2;
 
     div {
         position: absolute;
@@ -20,39 +21,74 @@
         background-size: cover;
 
         &:first-child {
-            top: 100px;
+            top: 80px;
             right: 0;
 
-            width: 89px;
-            height: 191px;
+            width: 140px;
+            height: 301px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 100px;
+
+                width: 89px;
+                height: 191px;
+            }
         }
         &:nth-child(2) {
-            top: 653px;
+            top: 500px;
             left: 0;
 
-            width: 77px;
-            height: 157px;
+            width: 137px;
+            height: 280px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 653px;
+
+                width: 77px;
+                height: 157px;
+            }
         }
         &:nth-child(3) {
-            top: 1210px;
+            top: 930px;
             right: 0;
 
-            width: 83px;
-            height: 180px;
+            width: 133px;
+            height: 285px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 1210px;
+
+                width: 83px;
+                height: 180px;
+            }
         }
         &:nth-child(4) {
-            top: 1755px;
+            top: 1355px;
             left: 0;
 
-            width: 70px;
-            height: 114px;
+            width: 95px;
+            height: 154px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 1755px;
+
+                width: 70px;
+                height: 114px;
+            }
         }
         &:last-child {
-            top: 1910px;
+            top: 1493px;
             right: 0;
 
-            width: 89px;
-            height: 160px;
+            width: 120px;
+            height: 216px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 1910px;
+
+                width: 89px;
+                height: 160px;
+            }
         }
     }
 }

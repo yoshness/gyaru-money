@@ -24,29 +24,53 @@
             top: -45px;
             right: 0;
 
-            width: 60px;
-            height: 86px;
+            width: 125px;
+            height: 180px;
+
+            @include max-screen($breakpoint-mobile) {
+                width: 60px;
+                height: 86px;
+            }
         }
         &:nth-child(2) {
             top: 25px;
             left: 0;
 
-            width: 59px;
-            height: 121px;
+            width: 125px;
+            height: 255px;
+
+            @include max-screen($breakpoint-mobile) {
+                width: 59px;
+                height: 121px;
+            }
         }
         &:nth-child(3) {
-            top: 513px;
+            top: 813px;
             right: 0;
 
-            width: 58px;
-            height: 80px;
+            width: 100px;
+            height: 138px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 513px;
+
+                width: 58px;
+                height: 80px;
+            }
         }
         &:last-child {
-            top: 1015px;
+            top: 1495px;
             left: 0;
 
-            width: 65px;
-            height: 109px;
+            width: 95px;
+            height: 159px;
+
+            @include max-screen($breakpoint-mobile) {
+                top: 1015px;
+
+                width: 65px;
+                height: 109px;
+            }
         }
     }
 }
