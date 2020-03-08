@@ -7,7 +7,7 @@
     background-color: #f092a2;
 
     @include max-screen($breakpoint-mobile) {
-        height: 96vh;
+        height: 92.5vh;
 
         text-align: center;
 
@@ -19,21 +19,46 @@
 }
 
 .hero__decors {
-    position: absolute;
-    top: 50px;
-    left: 0;
-
-    display: none;
-
-    width: 100vw;
-    height: 507px;
-
-    background-image: url(#{$path-image}hero-decor.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
 
     @include max-screen($breakpoint-mobile) {
         display: block;
+    }
+
+    div {
+        position: absolute;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:first-child {
+            top: 155px;
+            left: -20px;
+
+            width: 67px;
+            height: 92px;
+        }
+        &:nth-child(2) {
+            top: 48px;
+            right: 0;
+
+            width: 83px;
+            height: 161px;
+        }
+        &:nth-child(3) {
+            top: 400px;
+            left: 0;
+
+            width: 66px;
+            height: 152px;
+        }
+        &:last-child {
+            top: 240px;
+            right: 0;
+
+            width: 41px;
+            height: 64px;
+        }
     }
 }
 

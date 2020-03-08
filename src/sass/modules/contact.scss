@@ -45,7 +45,9 @@
 .contact__button {
     font-size: 23px;
     font-weight: bold;
-    line-height: 6;
+    line-height: 4.4;
+
+    position: relative;
 
     display: block;
 
@@ -59,16 +61,35 @@
     color: $color-primary;
     background-image: url(#{$path-image}line-button-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     @include max-screen($breakpoint-mobile) {
         font-size: 18px;
 
         width: 353px;
-        height: 105px;
+        height: 85px;
         padding: 0 30px;
 
         text-align: left;
+
+        background-size: contain;
+    }
+
+    &:before {
+        position: absolute;
+        top: -13px;
+        left: 5px;
+
+        display: block;
+
+        width: 82px;
+        height: 33px;
+
+        content: '';
+
+        background-image: url(#{$path-image}line-button-text-wrap.png);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 }
 

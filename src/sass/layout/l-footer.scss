@@ -7,14 +7,27 @@
 }
 
 .l-footer__decors {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
 
-    width: 100vw;
-    height: 97%;
+    div {
+        position: absolute;
 
-    background-image: url(#{$path-image}footer-decor.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:first-child {
+            top: -80px;
+            left: 0;
+
+            width: 136px;
+            height: 117px;
+        }
+        &:last-child {
+            top: 253px;
+            right: 0;
+
+            width: 101px;
+            height: 196px;
+        }
+    }
 }

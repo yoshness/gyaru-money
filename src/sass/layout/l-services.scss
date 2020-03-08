@@ -11,14 +11,48 @@
 }
 
 .l-services__decors {
-    position: absolute;
-    top: 170px;
-    left: 0;
+    position: relative;
 
-    width: 100vw;
-    height: 94%;
+    div {
+        position: absolute;
 
-    background-image: url(#{$path-image}services-decor.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:first-child {
+            top: 100px;
+            right: 0;
+
+            width: 89px;
+            height: 191px;
+        }
+        &:nth-child(2) {
+            top: 653px;
+            left: 0;
+
+            width: 77px;
+            height: 157px;
+        }
+        &:nth-child(3) {
+            top: 1210px;
+            right: 0;
+
+            width: 83px;
+            height: 180px;
+        }
+        &:nth-child(4) {
+            top: 1755px;
+            left: 0;
+
+            width: 70px;
+            height: 114px;
+        }
+        &:last-child {
+            top: 1910px;
+            right: 0;
+
+            width: 89px;
+            height: 160px;
+        }
+    }
 }

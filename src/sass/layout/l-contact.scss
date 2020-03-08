@@ -1,7 +1,7 @@
 .l-contact {
     position: relative;
 
-    padding: 60px 0 30px;
+    padding: 60px 0 25px;
 
     background-color: $color-primary;
 
@@ -47,7 +47,7 @@
 
         @include max-screen($breakpoint-mobile) {
             top: -60px;
-            left: 15px;
+            left: 25px;
 
             width: 100px;
             height: 100px;

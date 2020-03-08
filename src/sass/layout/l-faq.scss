@@ -11,15 +11,42 @@
 }
 
 .l-faq__decors {
-    position: absolute;
+    position: relative;
     z-index: 2;
-    top: 30px;
-    left: 0;
 
-    width: 100vw;
-    height: 97%;
+    div {
+        position: absolute;
 
-    background-image: url(#{$path-image}faq-decor.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &:first-child {
+            top: -45px;
+            right: 0;
+
+            width: 60px;
+            height: 86px;
+        }
+        &:nth-child(2) {
+            top: 25px;
+            left: 0;
+
+            width: 59px;
+            height: 121px;
+        }
+        &:nth-child(3) {
+            top: 513px;
+            right: 0;
+
+            width: 58px;
+            height: 80px;
+        }
+        &:last-child {
+            top: 1015px;
+            left: 0;
+
+            width: 65px;
+            height: 109px;
+        }
+    }
 }
