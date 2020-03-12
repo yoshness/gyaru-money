@@ -22,7 +22,10 @@ $delay: .35s;
 //breakpoints
 $breakpoint-mobile: 767px;
 
+// development
 $path-assets: "/public";
+// production
+// $path-assets: "/lp/zyoukyo/public";
 
 $path-image: "#{$path-assets}/images/";
 $path-font: "#{$path-assets}/fonts";
